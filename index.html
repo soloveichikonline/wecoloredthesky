@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Portal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Orbitron', sans-serif;
+            background: black;
+            color: #ff0000;
+            text-align: center;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+        }
+        h1 {
+            text-shadow: 0 0 10px red, 0 0 20px red;
+        }
+        input {
+            background: black;
+            border: 2px solid red;
+            color: #ff0000;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            outline: none;
+            font-family: 'Orbitron', sans-serif;
+            box-shadow: 0 0 10px red;
+        }
+        button {
+            background: black;
+            border: 2px solid red;
+            color: #ff0000;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+            box-shadow: 0 0 10px red;
+        }
+        button:hover {
+            background: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Enter Access Code</h1>
+        <input type="password" id="password" placeholder="Access Code">
+        <button onclick="checkPassword()">Enter</button>
+    </div>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === "look up") {
+                window.location.href = "nextpage.html";
+            } else {
+                alert("Access Denied");
+            }
+        }
+    </script>
+</body>
+</html>
