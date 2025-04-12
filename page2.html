@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>We Colored the Sky – Invitation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap">
+  <style>
+    body {
+      background-color: #0b0c10;
+      color: #f8f9fa;
+      font-family: 'Space Grotesk', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .letter {
+      max-width: 600px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type="email"] {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 1rem;
+      width: 250px;
+    }
+    button {
+      background-color: #f72585;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff4f9a;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="assets/we-colored-the-sky-cover.jpg" alt="We Colored the Sky Album Cover" />
+
+  <div class="letter">
+    <h1>Welcome to the Sky</h1>
+    <p>
+      This is not a typical album release.<br><br>
+      <em>We Colored the Sky</em> is a story about loss, memory, and the invisible threads between us.  
+      It’s meant to be received slowly, with space for you to feel your own connections, your own people, your own griefs.
+      <br><br>
+      If you'd like to receive this album in pieces over time—with stories, reflections, and gentle invitations to share—
+      sign up below. No marketing, no pressure, just shared sky.
+    </p>
+  </div>
+
+  <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Join the Journey</button>
+  </form>
+
+</body>
+</html>
