@@ -18,12 +18,15 @@
 
         video {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
+            top: 50%;
+            left: 50%;
+            width: auto;
             height: 100vh;
+            min-width: 100vw;
+            transform: translate(-50%, -50%);
             object-fit: cover;
             z-index: -1;
+            background-color: black;
         }
 
         .container {
@@ -87,7 +90,7 @@
     </style>
 </head>
 <body>
-    <video autoplay loop muted preload="auto">
+    <video autoplay loop muted playsinline preload="auto">
         <source src="background-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
