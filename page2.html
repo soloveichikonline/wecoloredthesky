@@ -16,6 +16,7 @@
       padding: 2rem;
       line-height: 1.6;
     }
+
     img {
       max-width: 400px;
       width: 100%;
@@ -23,27 +24,37 @@
       margin-bottom: 2rem;
       box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
     }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      text-align: center;
     }
+
     .letter {
       max-width: 600px;
       margin-bottom: 2rem;
       text-align: center;
+      padding: 0 1rem;
     }
+
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
+
     input[type="email"] {
       padding: 0.5rem;
       border-radius: 8px;
       border: none;
       margin-bottom: 1rem;
-      width: 250px;
+      width: 90%;
+      max-width: 300px;
+      font-size: 1rem;
     }
+
     button {
       background-color: #f72585;
       border: none;
@@ -51,9 +62,25 @@
       border-radius: 8px;
       color: white;
       cursor: pointer;
+      font-size: 1rem;
     }
+
     button:hover {
       background-color: #ff4f9a;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .letter {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
