@@ -72,7 +72,11 @@
             color: black;
         }
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            body {
+                background: green !important; /* DEBUG: shows if media query is working */
+            }
+
             video {
                 width: 100vw;
                 height: auto;
