@@ -72,7 +72,18 @@
             color: black;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            video {
+                width: 100vw;
+                height: auto;
+                min-height: 100vh;
+                min-width: unset;
+                top: 0;
+                left: 0;
+                transform: none;
+                object-fit: cover;
+            }
+
             h1 {
                 font-size: 1.75rem;
             }
